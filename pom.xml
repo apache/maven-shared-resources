@@ -36,14 +36,19 @@
   <description>A collection of templates that are specific to the Maven project.</description>
 
   <scm>
-    <connection>scm:svn:http://svn.apache.org/repos/asf/maven/shared/trunk/maven-shared-resources/</connection>
-    <developerConnection>scm:svn:https://svn.apache.org/repos/asf/maven/shared/trunk/maven-shared-resources/</developerConnection>
-    <url>http://svn.apache.org/viewvc/maven/shared/trunk/maven-shared-resources/</url>
+    <connection>scm:git:https://gitbox.apache.org/repos/asf/maven-shared-resources.git</connection>
+    <developerConnection>scm:git:https://gitbox.apache.org/repos/asf/maven-shared-resources.git</developerConnection>
+    <url>https://github.com/apache/maven-shared-resources/tree/${project.scm.tag}</url>
+    <tag>HEAD</tag>
   </scm>
   <issueManagement>
     <system>jira</system>
     <url>https://issues.apache.org/jira/browse/MSHARED/component/12326448</url>
   </issueManagement>
+  <ciManagement>
+    <system>Jenkins</system>
+    <url>https://builds.apache.org/job/maven-box/job/maven-shared-resources/</url>
+  </ciManagement>
   <distributionManagement>
     <site>
       <id>apache.website</id>
