@@ -56,11 +56,6 @@
     </site>
   </distributionManagement>
 
-  <ciManagement>
-    <system>Jenkins</system>
-    <url>https://builds.apache.org/hudson/job/maven-shared/</url>
-  </ciManagement>
-
   <build>
     <pluginManagement>
       <plugins>
