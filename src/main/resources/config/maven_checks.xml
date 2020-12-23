@@ -24,7 +24,7 @@ under the License.
 
 <!--
   Checkstyle configuration that checks the Maven coding conventions from:
-  http://maven.apache.org/developers/conventions/code.html
+  https://maven.apache.org/developers/conventions/code.html
 -->
 
 <module name="Checker">
@@ -34,20 +34,14 @@ under the License.
         <property name="fileNamePattern" value="module\-info\.java$" />
     </module>
 
-    <!-- Checks that each Java package has a Javadoc file used for commenting. -->
-    <!-- See http://checkstyle.sf.net/config_javadoc.html#JavadocPackage       -->
-    <!--module name="JavadocPackage">
-      <property name="allowLegacy" value="true"/>
-    </module-->
-
     <!-- Checks whether files end with a new line.                        -->
-    <!-- See http://checkstyle.sf.net/config_misc.html#NewlineAtEndOfFile -->
+    <!-- See https://checkstyle.org/config_misc.html#NewlineAtEndOfFile -->
     <!-- module name="NewlineAtEndOfFile"/ -->
 
     <module name="FileLength"/>
 
     <!-- Checks for Headers                              -->
-    <!-- See http://checkstyle.sf.net/config_header.html -->
+    <!-- See https://checkstyle.org/config_header.html -->
     <module name="RegexpHeader">
       <property name="fileExtensions" value="java"/>
       <property name="headerFile" value="${checkstyle.header.file}"/>
@@ -69,7 +63,7 @@ under the License.
     </module>
 
     <!-- Support CHECKSTYLE_OFF: regexp and CHECKSTYLE_ON: regexp comments to disable/enable some checks -->
-    <!-- see http://checkstyle.sourceforge.net/config.html#SuppressionCommentFilter -->
+    <!-- see https://checkstyle.org/config_filters.html#SuppressWithPlainTextCommentFilter -->
     <module name="SuppressWithPlainTextCommentFilter">
         <property name="offCommentFormat" value="CHECKSTYLE_OFF\: (.+)"/>
         <property name="onCommentFormat" value="CHECKSTYLE_ON\: (.+)"/>
@@ -81,12 +75,8 @@ under the License.
         <property name="tabWidth" value="4"/>
 
         <!-- required for SuppressWarningsFilter (and other Suppress* rules not used here) -->
-        <!-- see http://checkstyle.sourceforge.net/config_annotation.html#SuppressWarningsHolder -->
+        <!-- see https://checkstyle.org/config_annotation.html#SuppressWarningsHolder -->
         <module name="SuppressWarningsHolder"/>
-
-        <!-- required for SuppressionCommentFilter -->
-        <!-- see http://checkstyle.sourceforge.net/config.html#SuppressionCommentFilter -->
-        <!-- <module name="FileContentsHolder"/>   -->
 
         <module name="LeftCurly">
           <property name="option" value="nl"/>
@@ -99,7 +89,13 @@ under the License.
         <module name="MemberName" />
 
         <!-- Checks for Javadoc comments.                     -->
-        <!-- See http://checkstyle.sf.net/config_javadoc.html -->
+        <!-- See https://checkstyle.org/config_javadoc.html   -->
+<!--
+        To configure the check to use legacy package.html file when package-info.java file is absent:
+        <module name="JavadocPackage">
+          <property name="allowLegacy" value="true"/>
+        </module>
+-->
         <module name="JavadocMethod">
           <property name="severity" value="warning"/>
           <property name="scope" value="protected"/>
@@ -113,9 +109,8 @@ under the License.
           <property name="scope" value="protected"/>
         </module>
 
-
         <!-- Checks for Naming Conventions.                  -->
-        <!-- See http://checkstyle.sf.net/config_naming.html -->
+        <!-- See https://checkstyle.org/config_naming.html   -->
         <module name="ConstantName"/>
         <module name="LocalFinalVariableName"/>
         <module name="LocalVariableName"/>
@@ -126,21 +121,19 @@ under the License.
         <module name="TypeName"/>
 
         <!-- Checks for imports                              -->
-        <!-- See http://checkstyle.sf.net/config_import.html -->
+        <!-- See https://checkstyle.org/config_imports.html  -->
         <module name="AvoidStarImport"/>
         <module name="IllegalImport"/>
         <module name="RedundantImport"/>
         <module name="UnusedImports"/>
 
-
         <!-- Checks for Size Violations.                    -->
-        <!-- See http://checkstyle.sf.net/config_sizes.html -->
+        <!-- See https://checkstyle.org/config_sizes.html   -->
         <module name="MethodLength"/>
         <module name="ParameterNumber"/>
 
-
         <!-- Checks for whitespace                               -->
-        <!-- See http://checkstyle.sf.net/config_whitespace.html -->
+        <!-- See https://checkstyle.org/config_whitespace.html   -->
         <module name="EmptyForIteratorPad">
           <property name="option" value="space"/>
         </module>
@@ -155,24 +148,21 @@ under the License.
         <!-- module name="MethodParamPad"/ -->
         <module name="GenericWhitespace"/>
 
-
         <!-- Modifier Checks                                    -->
-        <!-- See http://checkstyle.sf.net/config_modifiers.html -->
+        <!-- See https://checkstyle.org/config_modifier.html    -->
         <module name="ModifierOrder"/>
         <module name="RedundantModifier"/>
 
-
         <!-- Checks for blocks. You know, those {}'s         -->
-        <!-- See http://checkstyle.sf.net/config_blocks.html -->
+        <!-- See https://checkstyle.org/config_blocks.html   -->
         <module name="AvoidNestedBlocks"/>
         <module name="EmptyBlock">
           <property name="option" value="text"/>
         </module>
         <module name="NeedBraces"/>
 
-
         <!-- Checks for common coding problems               -->
-        <!-- See http://checkstyle.sf.net/config_coding.html -->
+        <!-- See https://checkstyle.org/config_coding.html vv-->
         <!-- module name="AvoidInlineConditionals"/ -->
         <module name="EmptyStatement"/>
         <module name="EqualsHashCode"/>
@@ -192,7 +182,7 @@ under the License.
         <module name="SimplifyBooleanReturn"/>
 
         <!-- Checks for class design                         -->
-        <!-- See http://checkstyle.sf.net/config_design.html -->
+        <!-- See https://checkstyle.org/config_design.html   -->
         <!-- module name="DesignForExtension"/ -->
         <!-- module name="FinalClass"/ -->
         <!-- module name="HideUtilityClassConstructor"/ -->
@@ -203,7 +193,7 @@ under the License.
         </module>
 
         <!-- Miscellaneous other checks.                   -->
-        <!-- See http://checkstyle.sf.net/config_misc.html -->
+        <!-- See https://checkstyle.org/config_misc.html -->
         <!-- module name="ArrayTypeStyle"/ -->
         <!-- module name="FinalParameters"/ -->
         <!-- Let todo plugin handle this.
@@ -214,11 +204,11 @@ under the License.
     </module>
 
     <!-- Support @SuppressWarnings (added in Checkstyle 5.7) -->
-    <!-- see http://checkstyle.sourceforge.net/config.html#SuppressWarningsFilter -->
+    <!-- see https://checkstyle.org/config.html#SuppressWarningsFilter -->
     <module name="SuppressWarningsFilter"/>
 
     <!-- Checks properties file for a duplicated properties. -->
-    <!-- See http://checkstyle.sourceforge.net/config_misc.html#UniqueProperties -->
+    <!-- See https://checkstyle.org/config_misc.html#UniqueProperties -->
     <module name="UniqueProperties"/>
 
 </module>
