@@ -107,7 +107,7 @@ Usage
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-checkstyle-plugin</artifactId>
-        <version>2.14</version>
+        <version>3.x.x</version>
         <configuration>
           <configLocation>config/maven_checks.xml</configLocation>
           <headerLocation>config/maven-header.txt</headerLocation>
