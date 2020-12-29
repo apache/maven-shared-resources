@@ -26,24 +26,24 @@
     <groupId>org.apache.maven.shared</groupId>
     <artifactId>maven-shared-components</artifactId>
     <version>34</version>
-    <relativePath/>
+    <relativePath />
   </parent>
 
   <artifactId>maven-shared-resources</artifactId>
-  <version>3-SNAPSHOT</version>
+  <version>3</version>
 
   <name>Apache Maven Shared Resources</name>
   <description>A collection of templates that are specific to the Maven project.</description>
 
   <properties>
-    <project.build.outputTimestamp>2020-04-04T09:03:59Z</project.build.outputTimestamp>
+    <project.build.outputTimestamp>2020-12-29T17:11:56Z</project.build.outputTimestamp>
   </properties>
 
   <scm>
     <connection>scm:git:https://gitbox.apache.org/repos/asf/maven-shared-resources.git</connection>
     <developerConnection>scm:git:https://gitbox.apache.org/repos/asf/maven-shared-resources.git</developerConnection>
     <url>https://github.com/apache/maven-shared-resources/tree/${project.scm.tag}</url>
-    <tag>HEAD</tag>
+    <tag>maven-shared-resources-3</tag>
   </scm>
   <issueManagement>
     <system>jira</system>
