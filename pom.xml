@@ -30,20 +30,20 @@
   </parent>
 
   <artifactId>maven-shared-resources</artifactId>
-  <version>3</version>
+  <version>4-SNAPSHOT</version>
 
   <name>Apache Maven Shared Resources</name>
   <description>A collection of templates that are specific to the Maven project.</description>
 
   <properties>
-    <project.build.outputTimestamp>2020-12-29T17:11:56Z</project.build.outputTimestamp>
+    <project.build.outputTimestamp>2020-12-29T17:12:14Z</project.build.outputTimestamp>
   </properties>
 
   <scm>
     <connection>scm:git:https://gitbox.apache.org/repos/asf/maven-shared-resources.git</connection>
     <developerConnection>scm:git:https://gitbox.apache.org/repos/asf/maven-shared-resources.git</developerConnection>
     <url>https://github.com/apache/maven-shared-resources/tree/${project.scm.tag}</url>
-    <tag>maven-shared-resources-3</tag>
+    <tag>HEAD</tag>
   </scm>
   <issueManagement>
     <system>jira</system>
