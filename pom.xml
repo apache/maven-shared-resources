@@ -23,7 +23,7 @@
   <parent>
     <groupId>org.apache.maven.shared</groupId>
     <artifactId>maven-shared-components</artifactId>
-    <version>41</version>
+    <version>42-SNAPSHOT</version>
     <relativePath />
   </parent>
 
@@ -70,6 +70,7 @@
                 This is a license header template.
               -->
               <exclude>src/main/resources/config/maven-header.txt</exclude>
+              <exclude>src/main/resources/config/maven-header-2.txt</exclude>
             </excludes>
           </configuration>
         </plugin>
