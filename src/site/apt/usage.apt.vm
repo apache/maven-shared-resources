@@ -25,7 +25,7 @@
 
 Usage
 
-  There are a couple things you need to do to use Maven Shared Resources. First
+  There are a couple of things you need to do to use Maven Shared Resources. First
   you need to give the plugin that will use the resources access to them. After
   that you configure the plugin to actually use the resources.
 
@@ -35,7 +35,7 @@ Usage
   First you add maven-shared-resources as a dependency to a plugin in your
   <<<pom.xml>>>. This is done to give the plugin access to the resources within
   the maven-shared-resources JAR file. In this example we will use the resources
-  in Maven Changes Plugin.
+  in Maven Checkstyle Plugin.
 
 +----------+
 <project>
@@ -44,8 +44,8 @@ Usage
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-changes-plugin</artifactId>
-        <version>2.4</version>
+        <artifactId>maven-checkstyle-plugin</artifactId>
+        <version>3.2.0</version>
         <configuration>
           ...
         </configuration>
@@ -79,35 +79,8 @@ Usage
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-changes-plugin</artifactId>
-        <version>2.4</version>
-        <configuration>
-          <templateDirectory>org/apache/maven/plugins</templateDirectory>
-        </configuration>
-        <dependencies>
-          ...
-        </dependencies>
-        <executions>
-          ...
-        </executions>
-      </plugin>
-    </plugins>
-  </build>
-  ...
-</project>
-+----------+
-
-  or like this:
-
-+----------+
-<project>
-  ...
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-checkstyle-plugin</artifactId>
-        <version>3.x.x</version>
+        <version>3.2.0</version>
         <configuration>
           <configLocation>config/maven_checks.xml</configLocation>
           <headerLocation>config/maven-header.txt</headerLocation>
@@ -133,5 +106,5 @@ Usage
   practical use.
 
 +----------+
-mvn changes:announcement-generate
+mvn checkstyle:check
 +----------+
