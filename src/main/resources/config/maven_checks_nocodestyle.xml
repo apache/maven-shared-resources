@@ -34,33 +34,7 @@ under the License.
         <property name="fileNamePattern" value="module\-info\.java$" />
     </module>
 
-    <!-- Checks whether files end with a new line.                        -->
-    <!-- See https://checkstyle.org/config_misc.html#NewlineAtEndOfFile -->
-    <!-- module name="NewlineAtEndOfFile"/ -->
-
     <module name="FileLength"/>
-
-    <!-- Checks for Headers                              -->
-    <!-- See https://checkstyle.org/config_header.html -->
-    <module name="RegexpHeader">
-        <property name="fileExtensions" value="java"/>
-        <property name="headerFile" value="${checkstyle.header.file}"/>
-    </module>
-
-    <module name="FileTabCharacter">
-        <property name="eachLine" value="true"/>
-    </module>
-
-    <!-- Line with trailing spaces (disabled as it's too noisy) -->
-    <!--<module name="RegexpSingleline">
-        <property name="format" value="\s+$"/>
-        <property name="message" value="Line has trailing spaces."/>
-    </module>-->
-
-    <module name="LineLength">
-        <property name="max" value="120" />
-        <property name="ignorePattern" value="@version|@see|@todo|TODO"/>
-    </module>
 
     <!-- Support CHECKSTYLE_OFF: regexp and CHECKSTYLE_ON: regexp comments to disable/enable some checks -->
     <!-- see https://checkstyle.org/config_filters.html#SuppressWithPlainTextCommentFilter -->
@@ -77,14 +51,6 @@ under the License.
         <!-- required for SuppressWarningsFilter (and other Suppress* rules not used here) -->
         <!-- see https://checkstyle.org/config_annotation.html#SuppressWarningsHolder -->
         <module name="SuppressWarningsHolder"/>
-
-        <module name="LeftCurly">
-            <property name="option" value="nl"/>
-        </module>
-
-        <module name="RightCurly">
-            <property name="option" value="alone"/>
-        </module>
 
         <module name="MemberName" />
 
@@ -120,33 +86,10 @@ under the License.
         <module name="StaticVariableName"/>
         <module name="TypeName"/>
 
-        <!-- Checks for imports                              -->
-        <!-- See https://checkstyle.org/config_imports.html  -->
-        <module name="AvoidStarImport"/>
-        <module name="IllegalImport"/>
-        <module name="RedundantImport"/>
-        <module name="UnusedImports"/>
-
         <!-- Checks for Size Violations.                    -->
         <!-- See https://checkstyle.org/config_sizes.html   -->
         <module name="MethodLength"/>
         <module name="ParameterNumber"/>
-
-        <!-- Checks for whitespace                               -->
-        <!-- See https://checkstyle.org/config_whitespace.html   -->
-        <module name="EmptyForIteratorPad">
-            <property name="option" value="space"/>
-        </module>
-        <!-- module name="NoWhitespaceAfter"/ -->
-        <!-- module name="NoWhitespaceBefore"/ -->
-        <module name="OperatorWrap"/>
-        <module name="ParenPad">
-            <property name="option" value="space" />
-        </module>
-        <module name="WhitespaceAfter"/>
-        <module name="WhitespaceAround"/>
-        <!-- module name="MethodParamPad"/ -->
-        <module name="GenericWhitespace"/>
 
         <!-- Modifier Checks                                    -->
         <!-- See https://checkstyle.org/config_modifier.html    -->
