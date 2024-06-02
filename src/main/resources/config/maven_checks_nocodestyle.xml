@@ -86,6 +86,10 @@ under the License.
         <module name="StaticVariableName"/>
         <module name="TypeName"/>
 
+        <!-- Checks for imports                              -->
+        <!-- See https://checkstyle.org/checks/imports/avoidstarimport.html  -->
+        <module name="AvoidStarImport"/>
+
         <!-- Checks for Size Violations.                    -->
         <!-- See https://checkstyle.org/checks/sizes/index.html   -->
         <module name="MethodLength"/>
