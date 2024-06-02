@@ -125,6 +125,7 @@ under the License.
         <module name="OneStatementPerLine"/>
         <module name="SimplifyBooleanExpression"/>
         <module name="SimplifyBooleanReturn"/>
+        <module name="UnusedLocalVariable"/>
 
         <!-- Checks for class design                         -->
         <!-- See https://checkstyle.org/checks/design/index.html   -->
