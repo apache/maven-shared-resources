@@ -35,13 +35,13 @@ under the License.
     </module>
 
     <!-- Checks whether files end with a new line.                        -->
-    <!-- See https://checkstyle.org/config_misc.html#NewlineAtEndOfFile -->
+    <!-- See https://checkstyle.org/checks/misc/newlineatendoffile.html#NewlineAtEndOfFile -->
     <!-- module name="NewlineAtEndOfFile"/ -->
 
     <module name="FileLength"/>
 
     <!-- Checks for Headers                              -->
-    <!-- See https://checkstyle.org/config_header.html -->
+    <!-- See https://checkstyle.org/checks/header/regexpheader.html#RegexpHeader -->
     <module name="RegexpHeader">
       <property name="fileExtensions" value="java"/>
       <property name="headerFile" value="${checkstyle.header.file}"/>
@@ -63,7 +63,7 @@ under the License.
     </module>
 
     <!-- Support CHECKSTYLE_OFF: regexp and CHECKSTYLE_ON: regexp comments to disable/enable some checks -->
-    <!-- see https://checkstyle.org/config_filters.html#SuppressWithPlainTextCommentFilter -->
+    <!-- see https://checkstyle.org/filters/suppresswithplaintextcommentfilter.html -->
     <module name="SuppressWithPlainTextCommentFilter">
         <property name="offCommentFormat" value="CHECKSTYLE_OFF\: (.+)"/>
         <property name="onCommentFormat" value="CHECKSTYLE_ON\: (.+)"/>
@@ -75,7 +75,7 @@ under the License.
         <property name="tabWidth" value="4"/>
 
         <!-- required for SuppressWarningsFilter (and other Suppress* rules not used here) -->
-        <!-- see https://checkstyle.org/config_annotation.html#SuppressWarningsHolder -->
+        <!-- see https://checkstyle.org/checks/annotation/suppresswarningsholder.html#SuppressWarningsHolder -->
         <module name="SuppressWarningsHolder"/>
 
         <module name="LeftCurly">
@@ -89,7 +89,7 @@ under the License.
         <module name="MemberName" />
 
         <!-- Checks for Javadoc comments.                     -->
-        <!-- See https://checkstyle.org/config_javadoc.html   -->
+        <!-- See https://checkstyle.org/checks/javadoc/index.html   -->
 <!--
         To configure the check to use legacy package.html file when package-info.java file is absent:
         <module name="JavadocPackage">
@@ -110,7 +110,7 @@ under the License.
         </module>
 
         <!-- Checks for Naming Conventions.                  -->
-        <!-- See https://checkstyle.org/config_naming.html   -->
+        <!-- See https://checkstyle.org/checks/naming/index.html   -->
         <module name="ConstantName"/>
         <module name="LocalFinalVariableName"/>
         <module name="LocalVariableName"/>
@@ -121,19 +121,19 @@ under the License.
         <module name="TypeName"/>
 
         <!-- Checks for imports                              -->
-        <!-- See https://checkstyle.org/config_imports.html  -->
+        <!-- See https://checkstyle.org/checks/imports/index.html  -->
         <module name="AvoidStarImport"/>
         <module name="IllegalImport"/>
         <module name="RedundantImport"/>
         <module name="UnusedImports"/>
 
         <!-- Checks for Size Violations.                    -->
-        <!-- See https://checkstyle.org/config_sizes.html   -->
+        <!-- See https://checkstyle.org/checks/sizes/index.html   -->
         <module name="MethodLength"/>
         <module name="ParameterNumber"/>
 
         <!-- Checks for whitespace                               -->
-        <!-- See https://checkstyle.org/config_whitespace.html   -->
+        <!-- See https://checkstyle.org/checks/whitespace/index.html   -->
         <module name="EmptyForIteratorPad">
           <property name="option" value="space"/>
         </module>
@@ -149,12 +149,12 @@ under the License.
         <module name="GenericWhitespace"/>
 
         <!-- Modifier Checks                                    -->
-        <!-- See https://checkstyle.org/config_modifier.html    -->
+        <!-- See https://checkstyle.org/checks/modifier/index.html    -->
         <module name="ModifierOrder"/>
         <module name="RedundantModifier"/>
 
         <!-- Checks for blocks. You know, those {}'s         -->
-        <!-- See https://checkstyle.org/config_blocks.html   -->
+        <!-- See https://checkstyle.org/checks/blocks/index.html   -->
         <module name="AvoidNestedBlocks"/>
         <module name="EmptyBlock">
           <property name="option" value="text"/>
@@ -162,7 +162,7 @@ under the License.
         <module name="NeedBraces"/>
 
         <!-- Checks for common coding problems               -->
-        <!-- See https://checkstyle.org/config_coding.html vv-->
+        <!-- See https://checkstyle.org/checks/coding/index.html -->
         <!-- module name="AvoidInlineConditionals"/ -->
         <module name="EmptyStatement"/>
         <module name="EqualsHashCode"/>
@@ -182,7 +182,7 @@ under the License.
         <module name="SimplifyBooleanReturn"/>
 
         <!-- Checks for class design                         -->
-        <!-- See https://checkstyle.org/config_design.html   -->
+        <!-- See https://checkstyle.org/checks/design/index.html   -->
         <!-- module name="DesignForExtension"/ -->
         <!-- module name="FinalClass"/ -->
         <!-- module name="HideUtilityClassConstructor"/ -->
@@ -193,7 +193,7 @@ under the License.
         </module>
 
         <!-- Miscellaneous other checks.                   -->
-        <!-- See https://checkstyle.org/config_misc.html -->
+        <!-- See https://checkstyle.org/checks/misc/index.html -->
         <!-- module name="ArrayTypeStyle"/ -->
         <!-- module name="FinalParameters"/ -->
         <!-- Let todo plugin handle this.
@@ -204,11 +204,11 @@ under the License.
     </module>
 
     <!-- Support @SuppressWarnings (added in Checkstyle 5.7) -->
-    <!-- see https://checkstyle.org/config.html#SuppressWarningsFilter -->
+    <!-- see https://checkstyle.org/filters/suppresswarningsfilter.html#SuppressWarningsFilter -->
     <module name="SuppressWarningsFilter"/>
 
     <!-- Checks properties file for a duplicated properties. -->
-    <!-- See https://checkstyle.org/config_misc.html#UniqueProperties -->
+    <!-- See https://checkstyle.org/checks/misc/uniqueproperties.html#UniqueProperties -->
     <module name="UniqueProperties"/>
 
 </module>
