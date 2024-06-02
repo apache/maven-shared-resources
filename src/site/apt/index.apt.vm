@@ -45,6 +45,11 @@ ${project.name}
   {{{/developers/conventions/code.html}Maven coding conventions}} that can be
   used in Maven Checkstyle Plugin.
 
+* IntelliJ IDEA code formater
+
+** <<<config/maven-idea-codestyle-2022.xml>>>
+
+  This is IntelliJ IDEA code formater which can be imported into IDE.
 
 * Usage
 
