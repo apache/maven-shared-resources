@@ -28,7 +28,7 @@
   </parent>
 
   <artifactId>maven-shared-resources</artifactId>
-  <version>6-SNAPSHOT</version>
+  <version>6</version>
 
   <name>Apache Maven Shared Resources</name>
   <description>A collection of templates that are specific to the Maven project.</description>
@@ -36,7 +36,7 @@
   <scm>
     <connection>scm:git:https://gitbox.apache.org/repos/asf/maven-shared-resources.git</connection>
     <developerConnection>scm:git:https://gitbox.apache.org/repos/asf/maven-shared-resources.git</developerConnection>
-    <tag>HEAD</tag>
+    <tag>maven-shared-resources-6</tag>
     <url>https://github.com/apache/maven-shared-resources/tree/${project.scm.tag}</url>
   </scm>
   <issueManagement>
@@ -55,7 +55,7 @@
   </distributionManagement>
 
   <properties>
-    <project.build.outputTimestamp>2022-11-14T22:56:46Z</project.build.outputTimestamp>
+    <project.build.outputTimestamp>2024-06-08T09:39:24Z</project.build.outputTimestamp>
   </properties>
 
   <build>
