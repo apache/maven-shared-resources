@@ -26,9 +26,4 @@ jobs:
     name: Verify
     uses: apache/maven-gh-actions-shared/.github/workflows/maven-verify.yml@v4
     with:
-      # linux build is enough here :-)
-      matrix-exclude: >
-        [ 
-          {"os": "windows-latest"},
-          {"os": "macos-latest"}
-        ]
+      matrix-enabled: false
