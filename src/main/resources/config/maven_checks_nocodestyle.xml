@@ -120,6 +120,7 @@ under the License.
             <property name="ignoreConstructorParameter" value="true"/>
         </module>
         <module name="IllegalInstantiation"/>
+        <module name="IllegalCatch"/>
         <module name="InnerAssignment"/>
         <module name="MissingSwitchDefault"/>
         <module name="OneStatementPerLine"/>
