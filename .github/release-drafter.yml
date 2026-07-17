@@ -19,5 +19,4 @@
 
 _extends: maven-gh-actions-shared
 version-template: '$MAJOR'
-name-template: '$NEXT_MAJOR_VERSION'
-tag-template: 'maven-shared-resources-$NEXT_MAJOR_VERSION'
+tag-template: 'maven-shared-resources-$RESOLVED_VERSION'
