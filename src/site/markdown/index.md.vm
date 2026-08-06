@@ -1,57 +1,47 @@
- ------
- Introduction
- ------
- Dennis Lundberg
- ------
- 2015-01-22
- ------
+<!--
+Licensed to the Apache Software Foundation (ASF) under one
+or more contributor license agreements.  See the NOTICE file
+distributed with this work for additional information
+regarding copyright ownership.  The ASF licenses this file
+to you under the Apache License, Version 2.0 (the
+"License"); you may not use this file except in compliance
+with the License.  You may obtain a copy of the License at
 
-~~ Licensed to the Apache Software Foundation (ASF) under one
-~~ or more contributor license agreements.  See the NOTICE file
-~~ distributed with this work for additional information
-~~ regarding copyright ownership.  The ASF licenses this file
-~~ to you under the Apache License, Version 2.0 (the
-~~ "License"); you may not use this file except in compliance
-~~ with the License.  You may obtain a copy of the License at
-~~
-~~   http://www.apache.org/licenses/LICENSE-2.0
-~~
-~~ Unless required by applicable law or agreed to in writing,
-~~ software distributed under the License is distributed on an
-~~ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-~~ KIND, either express or implied.  See the License for the
-~~ specific language governing permissions and limitations
-~~ under the License.
+http://www.apache.org/licenses/LICENSE-2.0
 
-${project.name}
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied.  See the License for the
+specific language governing permissions and limitations
+under the License.
+-->
 
-  This is a collection of templates that are specific to the Maven project. They
-  are probably not of interest to projects other than Apache Maven.
+# ${project.name}
 
-  Below you will find a listing of the resources that can be found in the
-  current version (${project.version}) of Maven Shared Resources. They are
-  listed by which plugin they are meant to be used with.
+This is a collection of templates that are specific to the Maven project. They are probably not of interest to projects other than Apache Maven.
 
-* Maven Checkstyle Plugin
+Below you will find a listing of the resources that can be found in the current version (${project.version}) of Maven Shared Resources. They are listed by which plugin they are meant to be used with.
 
-** <<<config/maven-header.txt>>>
+Maven Checkstyle Plugin
+-----------------------
 
-  This is a license header template that can be used by Maven Checkstyle Plugin
-  to verify that all files are using this license header.
+#[[### `config/maven-header.txt`]]#
 
-** {{{./maven_checks.html}<<<config/maven_checks.xml>>>}}
+This is a license header template that can be used by Maven Checkstyle Plugin to verify that all files are using this license header.
 
-  This is a Checkstyle configuration file for
-  {{{/developers/conventions/code.html}Maven coding conventions}} that can be
-  used in Maven Checkstyle Plugin.
+#[[### [`config/maven_checks.xml`](./maven_checks.html)]]#
 
-* IntelliJ IDEA code formater
+This is a Checkstyle configuration file for [Maven coding conventions](/developers/conventions/code.html) that can be used in Maven Checkstyle Plugin.
 
-** <<<config/maven-idea-codestyle-2022.xml>>>
+IntelliJ IDEA code formater
+---------------------------
 
-  This is IntelliJ IDEA code formater which can be imported into IDE.
+#[[### `config/maven-idea-codestyle-2022.xml`]]#
 
-* Usage
+This is IntelliJ IDEA code formater which can be imported into IDE.
 
-  General instructions on how to use the Maven Shared Resources can be found on
-  the {{{./usage.html}usage page}}.
+Usage
+-----
+
+General instructions on how to use the Maven Shared Resources can be found on the [usage page](./usage.html).
