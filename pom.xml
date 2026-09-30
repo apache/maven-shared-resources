@@ -65,12 +65,12 @@
           <groupId>org.apache.rat</groupId>
           <artifactId>apache-rat-plugin</artifactId>
           <configuration>
-            <excludes combine.children="append">
+            <inputExcludes combine.children="append">
               <!--
                 This is a license header template.
               -->
               <exclude>src/main/resources/config/maven-header.txt</exclude>
-            </excludes>
+            </inputExcludes>
           </configuration>
         </plugin>
       </plugins>
