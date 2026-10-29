@@ -44,8 +44,8 @@
     <url>https://issues.apache.org/jira/issues/?jql=project+%3D+MSHARED+AND+component+%3D+maven-shared-resources</url>
   </issueManagement>
   <ciManagement>
-    <system>Jenkins</system>
-    <url>https://ci-maven.apache.org/job/Maven/job/maven-box/job/maven-shared-resources/</url>
+    <system>GitHub</system>
+    <url>https://github.com/apache/maven-shared-resources/actions</url>
   </ciManagement>
   <distributionManagement>
     <site>
