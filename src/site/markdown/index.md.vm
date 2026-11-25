@@ -46,7 +46,7 @@ IntelliJ IDEA code formater
 
 #[[### `config/maven-idea-codestyle-2022.xml`]]#
 
-This is IntelliJ IDEA code formater which can be imported into IDE.
+This is IntelliJ IDEA code formater which can be imported into IDE. It approximates palantir-java-format for Java; to get the exact output, install the palantir-java-format IntelliJ plugin.
 
 Usage
 -----
