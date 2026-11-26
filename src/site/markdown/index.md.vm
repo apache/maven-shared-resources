@@ -41,6 +41,32 @@ This is a license header template that can be used by Maven Checkstyle Plugin to
 
 This is a Checkstyle configuration file for [Maven coding conventions](/developers/conventions/code.html) that can be used in Maven Checkstyle Plugin.
 
+#[[### `config/maven_checks_nocodestyle.xml`]]#
+
+The same Checkstyle rules without the layout, import and header checks that Spotless covers. The Maven parent POM uses this one.
+
+Spotless Maven Plugin
+---------------------
+
+#[[### `config/maven-header-plain.txt`]]#
+
+The license header as plain text, for the Spotless `licenseHeader` step.
+
+#[[### `config/maven-eclipse-importorder.txt`]]#
+
+The import order, for the Spotless `importOrder` step. Eclipse can import it too.
+
+#[[### `config/maven-groovy-eclipse.properties`]]#
+
+Groovy-Eclipse formatter settings for Groovy scripts, such as invoker hook scripts, for the Spotless `greclipse` step.
+
+Eclipse code formatter
+----------------------
+
+#[[### `config/maven-eclipse-codestyle.xml`]]#
+
+An Eclipse formatter profile matching palantir-java-format, which can be imported into the IDE.
+
 IntelliJ IDEA code formater
 ---------------------------
 
